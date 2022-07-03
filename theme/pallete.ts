@@ -8,4 +8,5 @@ export const palette = {
   passThroughOrange: "#FAF0DB",
   passThroughGreen: "#D6F6FF",
   passThroughPink: "#F2E3E9",
+  grey:"#7D96B5"
 };

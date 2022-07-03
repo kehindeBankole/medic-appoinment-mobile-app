@@ -47,46 +47,6 @@ export default function Header() {
           )}
         />
 
-        <View style={{ paddingHorizontal: ms(28) }}>
-          <FlatList
-            data={[
-              { day: 12, date: "Tue", background: "#1C6BA4" },
-              { day: 12, date: "Tue", background: "#F1E6EAF7" },
-              { day: 12, date: "Tue", background: "#FAF0DB" },
-            ]}
-            showsHorizontalScrollIndicator={false}
-            ItemSeparatorComponent={() => (
-              <View
-                style={{
-                  paddingLeft: 10,
-                  height: 0,
-                  borderStyle: "dotted",
-                  borderRadius: 1,
-                  borderWidth: 1,
-                  borderColor: "red",
-                  borderTopColor: "red",
-                  marginTop: mvs(15),
-                }}
-              >
-                <Text>as</Text>
-              </View>
-            )}
-            renderItem={({ item }) => (
-              <View
-                style={{
-                  width: "100%",
-                  height: mvs(112),
-                  backgroundColor: `${item.background}`,
-                  borderRadius: 28,
-                  marginTop: mvs(15),
-                }}
-              >
-                <Text style={styles.date}>12</Text>
-                <Text style={styles.day}>Tue</Text>
-              </View>
-            )}
-          />
-        </View>
       </View>
     </>
   );
